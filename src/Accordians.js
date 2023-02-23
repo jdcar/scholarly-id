@@ -2,7 +2,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import OrcidCard from './Researcherids/OrcidCard'
 import ResearcherIdCard from './Researcherids/ResearcherIdCard';
 import ScopusIdCard from './Researcherids/ScopusId'
-
+import Checklist from './Checklists/Checklist'
 function FlushExample() {
   return (
     <Accordion defaultActiveKey="0" flush>
@@ -12,6 +12,7 @@ function FlushExample() {
           <OrcidCard/>
           <ResearcherIdCard/>
           <ScopusIdCard/>
+    
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
