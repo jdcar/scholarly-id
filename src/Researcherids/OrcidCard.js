@@ -63,7 +63,7 @@ function OrcidCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                    label={<><p>1. <a href="https://orcid.org/signin" target="_blank">Register for ORCID</a></p></>}
+                    label={<>1. <a href="https://orcid.org/signin" target="_blank">Register for ORCID</a></>}
                   />
                 </div>
               ))}
@@ -79,7 +79,7 @@ function OrcidCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxTwoHandleOnChange}
-                  label={<><p>2. <a href="https://orcid.it.northwestern.edu/" target="_blank">Link ORCID to Northwestern</a></p></>}
+                  label={<>2. <a href="https://orcid.it.northwestern.edu/" target="_blank">Link ORCID to Northwestern</a></>}
                   />
                 </div>
               ))}

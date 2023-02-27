@@ -8,12 +8,13 @@ import ResearchGate from './Networking/ResearchGate';
 import GoogleCard from './SEO/Google';
 import WebsiteCard from './ProfessionalWebpage/Website';
 import TwitterCard from './SocialMedia/TwitterCard'
+import Star from './star.png'
 
 function FlushExample() {
   return (
     <Accordion defaultActiveKey="0" flush>
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Researcher Identifiers</Accordion.Header>
+        <Accordion.Header>Researcher Identifiers  <img alt="star" width= "20pt" src={Star} /></Accordion.Header>
         <Accordion.Body>
           <OrcidCard/>
           <ResearcherIdCard/>
@@ -21,19 +22,21 @@ function FlushExample() {
     
         </Accordion.Body>
       </Accordion.Item>
+
       <Accordion.Item eventKey="1">
+        <Accordion.Header>Google  <img alt="star" width= "20pt" src={Star} /></Accordion.Header>
+        <Accordion.Body>
+          <GoogleCard/>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
         <Accordion.Header>Networking Sites</Accordion.Header>
         <Accordion.Body>
           <LinkedIn/>
           <ResearchGate/>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>Google</Accordion.Header>
-        <Accordion.Body>
-          <GoogleCard/>
-        </Accordion.Body>
-      </Accordion.Item>
+ 
       <Accordion.Item eventKey="3">
         <Accordion.Header>Social Media</Accordion.Header>
         <Accordion.Body>

@@ -48,7 +48,7 @@ function LinkedIn() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                  label={<><p>1. <a href="https://www.linkedin.com/" target="_blank">Register for a LinkedIn account</a></p></>}
+                  label={<>1. <a href="https://www.linkedin.com/" target="_blank">Register for a LinkedIn account</a></>}
                   />
                 </div>
               ))}
@@ -64,7 +64,7 @@ function LinkedIn() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxTwoHandleOnChange}
-                  label={<><p>2. Update the profile</p></>}
+                  label={<>2. Update the profile</>}
                   />
                 </div>
               ))}

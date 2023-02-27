@@ -37,17 +37,6 @@ function GoogleCard() {
     boxFiveSetIsChecked(!boxFiveIsChecked);
   };
 
-
-
-  const checkBoxTwoString = `2. Note if there are old social media sites you know longer use appearing in the first two pages of results.`
-  const checkBoxThreeString = `3. Mute or delete old and unused social media pages or blogs (Facebook, Tumblr, Instagram, Goodreads, Friendster, MySpace, GeoCities, etc.)`
-
-  const checkBoxFourString = `4. Setup a <a href="https://support.google.com/websearch/answer/4815696?hl=en" target="_blank">Google alert for your name`
-
-  const checkBoxFiveString = `5. <a href="https://scholar.google.com/intl/en/scholar/citations.html">Setup a Google Scholar profile`
-
-
-
   return (
     <Card>
 
@@ -79,7 +68,7 @@ function GoogleCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                  label={<><p>1. Open an incognito window and <a href="https://google.com" target="_blank">Google your name</a></p></>}
+                  label={<>1. Open an incognito window and <a href="https://google.com" target="_blank">Google your name</a></>}
                   />
                 </div>
               ))}

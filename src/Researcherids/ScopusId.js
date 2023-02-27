@@ -26,10 +26,6 @@ function ScopusIdCard() {
     boxThreeSetIsChecked(!boxThreeIsChecked);
   };
 
-  const checkBoxOneString = `<p>1. <a href="https://service.elsevier.com/app/answers/detail/a_id/11240/supporthub/scopus/" target="_blank">Add your ORCID iD to your Scopus author profile</a></p>`
-
-  const checkBoxTwoString = `<p>2. <a href="https://orcid.scopusfeedback.com/#/" target="_blank">Synch to ORCID</a></p>`
-
 return (
     <Card>
         <Card.Body>
@@ -55,7 +51,7 @@ return (
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                  label={<><p>1. <a href="https://service.elsevier.com/app/answers/detail/a_id/11240/supporthub/scopus/" target="_blank">Add your ORCID iD to your Scopus author profile</a></p></>}
+                  label={<>1. <a href="https://service.elsevier.com/app/answers/detail/a_id/11240/supporthub/scopus/" target="_blank">Add your ORCID iD to your Scopus author profile</a></>}
                   />
                 </div>
               ))}
@@ -71,7 +67,7 @@ return (
                     type={type}
                     id={`default-${type}`}
                     onChange={boxTwoHandleOnChange}
-                  label={<><p>2. <a href="https://orcid.scopusfeedback.com/#/" target="_blank">Synch to ORCID</a></p></>}
+                  label={<>2. <a href="https://orcid.scopusfeedback.com/#/" target="_blank">Synch to ORCID</a></>}
                   />
                 </div>
               ))}
