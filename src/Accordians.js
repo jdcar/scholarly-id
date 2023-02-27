@@ -7,6 +7,7 @@ import LinkedIn from './Networking/LinkedIn';
 import ResearchGate from './Networking/ResearchGate';
 import GoogleCard from './SEO/Google';
 import WebsiteCard from './ProfessionalWebpage/Website';
+import TwitterCard from './SocialMedia/TwitterCard'
 
 function FlushExample() {
   return (
@@ -36,17 +37,11 @@ function FlushExample() {
       <Accordion.Item eventKey="3">
         <Accordion.Header>Social Media</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <TwitterCard/>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="4">
-        <Accordion.Header>Professional webpage</Accordion.Header>
+        <Accordion.Header>Professional Webpage</Accordion.Header>
         <Accordion.Body>
          <WebsiteCard/>
         </Accordion.Body>

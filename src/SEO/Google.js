@@ -38,7 +38,6 @@ function GoogleCard() {
   };
 
 
-    const checkBoxOneString = `<p>1. Open an incognito window and <a href="https://google.com" target="_blank">Google your name</a></p>`
 
   const checkBoxTwoString = `2. Note if there are old social media sites you know longer use appearing in the first two pages of results.`
   const checkBoxThreeString = `3. Mute or delete old and unused social media pages or blogs (Facebook, Tumblr, Instagram, Goodreads, Friendster, MySpace, GeoCities, etc.)`
@@ -80,16 +79,11 @@ function GoogleCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                  //label={}
+                  label={<><p>1. Open an incognito window and <a href="https://google.com" target="_blank">Google your name</a></p></>}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxOneString }}
-            />
           </Col>
         </Row>
         <Row xs="auto">
@@ -101,16 +95,11 @@ function GoogleCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxTwoHandleOnChange}
-                  //label={}
+                  label={"2. Note if there are old social media sites you know longer use appearing in the first two pages of results."}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxTwoString }}
-            />
           </Col>
         </Row>
         <Row xs="auto">
@@ -121,18 +110,13 @@ function GoogleCard() {
                   <Form.Check
                     type={type}
                     id={`default-${type}`}
-                    // label={"3. Review profile for accuracy. If needed, edit the Web of Science author profile."}
+                    label={`3. Mute or delete old and unused social media pages or blogs (Facebook, Tumblr, Instagram, Goodreads, Friendster, MySpace, GeoCities, etc.)`}
                     onChange={boxThreeHandleOnChange}
                   />
                 </div>
               ))}
             </Form>
           </Col>
-          <Col>
-          <div
-              dangerouslySetInnerHTML={{ __html: checkBoxThreeString }}
-            />
-          </Col>
         </Row>
         <Row xs="auto">
           <Col>
@@ -142,18 +126,13 @@ function GoogleCard() {
                   <Form.Check
                     type={type}
                     id={`default-${type}`}
-                    // label={}
+                    label={<>4. Setup a <a href="https://support.google.com/websearch/answer/4815696?hl=en" target="_blank">Google alert for your name</a></>}
                     onChange={boxFourHandleOnChange}
                   />
                 </div>
               ))}
             </Form>
           </Col>
-          <Col>
-          <div
-              dangerouslySetInnerHTML={{ __html: checkBoxFourString }}
-            />
-          </Col>
         </Row>
         <Row xs="auto">
           <Col>
@@ -163,17 +142,12 @@ function GoogleCard() {
                   <Form.Check
                     type={type}
                     id={`default-${type}`}
-                    // label={}
+                    label={<>5. <a href="https://scholar.google.com/intl/en/scholar/citations.html" target="_blank">Setup a Google Scholar profile</a></>}
                     onChange={boxFiveHandleOnChange}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-          <div
-              dangerouslySetInnerHTML={{ __html: checkBoxFiveString }}
-            />
           </Col>
         </Row>
       </Card.Body>

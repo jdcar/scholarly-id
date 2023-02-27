@@ -21,13 +21,7 @@ function LinkedIn() {
     boxTwoSetIsChecked(!boxTwoIsChecked);
   };
 
-  const boxThreeHandleOnChange = () => {
-    boxThreeSetIsChecked(!boxThreeIsChecked);
-  };
-
-  const checkBoxOneString = `<p>1. <a href="https://www.linkedin.com/" target="_blank">Register for a LinkedIn account`
-
-  const checkBoxTwoString = `<p>2. Update the profile`
+  const checkBoxTwoString = `<p>2. Update the profile</p>`
 
   return (
     <Card>
@@ -54,16 +48,11 @@ function LinkedIn() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                  //label={}
+                  label={<><p>1. <a href="https://www.linkedin.com/" target="_blank">Register for a LinkedIn account</a></p></>}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxOneString }}
-            />
           </Col>
         </Row>
         <Row xs="auto">
@@ -75,19 +64,13 @@ function LinkedIn() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxTwoHandleOnChange}
-                  //label={}
+                  label={<><p>2. Update the profile</p></>}
                   />
                 </div>
               ))}
             </Form>
           </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxTwoString }}
-            />
-          </Col>
         </Row>
-        
       </Card.Body>
     </Card>
   );

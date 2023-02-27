@@ -21,7 +21,7 @@ function WebsiteCard() {
     boxTwoSetIsChecked(!boxTwoIsChecked);
   };
 
-    const checkBoxOneString = `<p>1. Create a professional website using a tool like Wordpress, Wix, or SquareSpace</a></p>`
+    const checkBoxOneString = `<p>1. Create a professional website using a tool like <a href="https://wordpress.com/" target="_blank">Wordpress</a>, <a href="https://www.wix.com/" target="_blank">Wix</a>, or <a href="https://www.squarespace.com/"  target="_blank">SquareSpace</a></p>`
 
 //   const checkBoxTwoString = `2. <a href="https://Website.it.northwestern.edu/" target="_blank">Link Website to Northwestern</a></p>`
 
@@ -41,7 +41,7 @@ function WebsiteCard() {
             {checkboxes == 3 &&
             <div><img alt="checkmark" src={CheckMark} /></div>
 } */}
-            {boxOneIsChecked === false || boxTwoIsChecked === false  ? <div><img alt="uncheckmark" src={unCheckMark} /></div> : <div><img alt="checkmark" src={CheckMark} /></div>}
+            {boxOneIsChecked === false   ? <div><img alt="uncheckmark" src={unCheckMark} /></div> : <div><img alt="checkmark" src={CheckMark} /></div>}
 
             </Row>
         </Col>
@@ -59,16 +59,11 @@ function WebsiteCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                  //label={}
+                  label={<p>1. Create a professional website using a tool like <a href="https://wordpress.com/" target="_blank">Wordpress</a>, <a href="https://www.wix.com/" target="_blank">Wix</a>, or <a href="https://www.squarespace.com/"  target="_blank">SquareSpace</a></p>}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxOneString }}
-            />
           </Col>
         </Row>
          </Card.Body>

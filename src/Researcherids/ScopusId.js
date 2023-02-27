@@ -55,16 +55,11 @@ return (
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                  //label={}
+                  label={<><p>1. <a href="https://service.elsevier.com/app/answers/detail/a_id/11240/supporthub/scopus/" target="_blank">Add your ORCID iD to your Scopus author profile</a></p></>}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxOneString }}
-            />
           </Col>
         </Row>
         <Row xs="auto">
@@ -76,16 +71,11 @@ return (
                     type={type}
                     id={`default-${type}`}
                     onChange={boxTwoHandleOnChange}
-                  //label={}
+                  label={<><p>2. <a href="https://orcid.scopusfeedback.com/#/" target="_blank">Synch to ORCID</a></p></>}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxTwoString }}
-            />
           </Col>
         </Row>
         <Row xs="auto">

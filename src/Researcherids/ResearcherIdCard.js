@@ -25,10 +25,6 @@ function ResearcherIdCard() {
     boxThreeSetIsChecked(!boxThreeIsChecked);
   };
 
-  const checkBoxOneString = `<p>1. <a href="http://webofscience.help.clarivate.com/Content/author-record.html" target="_blank">Claim your Web of Science researcher profile</a> or <a href="https://publons.freshdesk.com/support/solutions/articles/12000088851-how-to-create-a-web-of-science-researcher-profile-and-login" target="_blank">Create a Web of Science researcher profile</a></p>`
-
-  const checkBoxTwoString = `<p>2. <a href="https://libguides.northwestern.edu/c.php?g=660893&p=9509666" target="_blank">Synch to ORCID</a></p>`
-
   return (
     <Card>
       <Card.Body>
@@ -54,16 +50,12 @@ function ResearcherIdCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                  //label={}
+                    label={(<><p>1. <a href="http://webofscience.help.clarivate.com/Content/author-record.html" target="_blank">Claim your Web of Science researcher profile</a> or <a href="https://publons.freshdesk.com/support/solutions/articles/12000088851-how-to-create-a-web-of-science-researcher-profile-and-login" target="_blank">Create a Web of Science researcher profile</a></p></>)}
+                  // dangerouslySetInnerHTML={{ __html: checkBoxOneString }}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxOneString }}
-            />
           </Col>
         </Row>
         <Row xs="auto">
@@ -75,16 +67,11 @@ function ResearcherIdCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxTwoHandleOnChange}
-                  //label={}
+                  label={(<><p>2. <a href="https://libguides.northwestern.edu/c.php?g=660893&p=9509666" target="_blank">Synch to ORCID</a></p></>)}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxTwoString }}
-            />
           </Col>
         </Row>
         <Row xs="auto">

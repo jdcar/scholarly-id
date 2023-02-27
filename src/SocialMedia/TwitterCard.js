@@ -7,7 +7,7 @@ import CheckMark from '../task_alt_FILL0_wght400_GRAD0_opsz48.png'
 import unCheckMark from '../radio_button_unchecked_FILL0_wght400_GRAD0_opsz48.png'
 import { useState } from 'react';
 
-function ResearchGate() {
+function Twitter() {
 
   const [boxOneIsChecked, boxOneSetIsChecked] = useState(false)
   const [boxTwoIsChecked, boxTwoSetIsChecked] = useState(false)
@@ -31,9 +31,9 @@ function ResearchGate() {
 
             </Row>
         </Col>
-        <h4>ResearchGate</h4>
+        <h4>Twitter</h4>
         <Col>
-          <p>ResearchGate is a networking site specifically for academics</p>
+          <p>Twitter is a social media site often used by academics to communicate with each other and the public.</p>
         </Col>
         <Row xs="auto">
           <Col>
@@ -45,7 +45,7 @@ function ResearchGate() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                  label={<>1. <a href="https://www.ResearchGate.net/" target="_blank">Register for a ResearchGate account</a></>}
+                  label={<>1. <a href="https://www.Twitter.com/" target="_blank">Register for a Twitter account</a></>}
                   />
                 </div>
               ))}
@@ -61,7 +61,7 @@ function ResearchGate() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxTwoHandleOnChange}
-                  label={<>2. Update the profile</>}
+                  label={<>2. Update the profile. Consider some of the recommendations in this <a href="https://medium.com/@smojarad/a-beginners-guide-to-academic-twitter-f483dae86597" target="_blank" >Medium post</a> for using Twitter as an academic</>}
                   />
                 </div>
               ))}
@@ -73,4 +73,4 @@ function ResearchGate() {
   );
 }
 
-export default ResearchGate;
+export default Twitter;

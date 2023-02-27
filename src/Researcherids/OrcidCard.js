@@ -28,7 +28,7 @@ function OrcidCard() {
 
     const checkBoxOneString = `<p>1. <a href="https://orcid.org/signin" target="_blank">Register for ORCID</a></p>`
 
-  const checkBoxTwoString = `2. <a href="https://orcid.it.northwestern.edu/" target="_blank">Link ORCID to Northwestern</a></p>`
+  const checkBoxTwoString = `<p>2. <a href="https://orcid.it.northwestern.edu/" target="_blank">Link ORCID to Northwestern</a></p>`
 
 
 
@@ -63,16 +63,11 @@ function OrcidCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxOneHandleOnChange}
-                  //label={}
+                    label={<><p>1. <a href="https://orcid.org/signin" target="_blank">Register for ORCID</a></p></>}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxOneString }}
-            />
           </Col>
         </Row>
         <Row xs="auto">
@@ -84,16 +79,11 @@ function OrcidCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxTwoHandleOnChange}
-                  //label={}
+                  label={<><p>2. <a href="https://orcid.it.northwestern.edu/" target="_blank">Link ORCID to Northwestern</a></p></>}
                   />
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-            <div
-              dangerouslySetInnerHTML={{ __html: checkBoxTwoString }}
-            />
           </Col>
         </Row>
         <Row xs="auto">
