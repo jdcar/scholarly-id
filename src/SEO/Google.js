@@ -84,7 +84,7 @@ function GoogleCard() {
                     type={type}
                     id={`default-${type}`}
                     onChange={boxTwoHandleOnChange}
-                  label={"2. Note if there are old social media sites you know longer use appearing in the first two pages of results."}
+                  label={<>2. Note if there are old social media sites you know longer use appearing in the first two pages of results.</>}
                   />
                 </div>
               ))}
@@ -99,7 +99,7 @@ function GoogleCard() {
                   <Form.Check
                     type={type}
                     id={`default-${type}`}
-                    label={`3. Mute or delete old and unused social media pages or blogs (Facebook, Tumblr, Instagram, Goodreads, Friendster, MySpace, GeoCities, etc.)`}
+                    label={<>3. Mute or delete old and unused social media pages or blogs (Facebook, Tumblr, Instagram, Goodreads, Friendster, MySpace, GeoCities, etc.)</>}
                     onChange={boxThreeHandleOnChange}
                   />
                 </div>

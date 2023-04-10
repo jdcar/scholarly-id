@@ -82,7 +82,7 @@ return (
                   <Form.Check
                     type={type}
                     id={`default-${type}`}
-                    label={"3. Review the profile for accuracy. If needed, Edit profile."}
+                    label={"3. Review the profile for accuracy. If needed, edit Scopus profile."}
                     onChange={boxThreeHandleOnChange}
                   />
                 </div>

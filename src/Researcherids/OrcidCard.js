@@ -94,7 +94,7 @@ function OrcidCard() {
                   <Form.Check
                     type={type}
                     id={`default-${type}`}
-                    label={"3. Review profile for accuracy. If needed, edit the Web of Science author profile."}
+                    label={<>3. Fill in ORCID profile and review for accuracy. </>}
                     onChange={boxThreeHandleOnChange}
                   />
                 </div>
