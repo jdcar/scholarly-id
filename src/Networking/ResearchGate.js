@@ -1,6 +1,5 @@
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
-import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import CheckMark from '../task_alt_FILL0_wght400_GRAD0_opsz48.png'
@@ -21,22 +20,13 @@ function ResearchGate() {
   };
 
   return (
-    <Card>
+    <Card className="text-start">
       <Card.Body>
-        <Col>
-
-          <Row xs="auto">
+          <h4 className="text-center">ResearchGate</h4>
 
             {boxOneIsChecked === false || boxTwoIsChecked === false ? <div><img alt="uncheckmark" src={unCheckMark} /></div> : <div><img alt="checkmark" src={CheckMark} /></div>}
 
-            </Row>
-        </Col>
-        <h4>ResearchGate</h4>
-        <Col>
           <p>ResearchGate is a networking site specifically for academics</p>
-        </Col>
-        <Row xs="auto">
-          <Col>
 
             <Form>
               {['checkbox'].map((type) => (
@@ -50,10 +40,6 @@ function ResearchGate() {
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
-        <Row xs="auto">
-          <Col>
             <Form>
               {['checkbox'].map((type) => (
                 <div key={`default-${type}`} className="mb-3">
@@ -66,8 +52,6 @@ function ResearchGate() {
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
       </Card.Body>
     </Card>
   );

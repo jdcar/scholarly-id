@@ -38,28 +38,13 @@ function GoogleCard() {
   };
 
   return (
-    <Card>
+    <Card className="text-start">
 
       <Card.Body>
-        <Col>
 
-          <Row xs="auto">
+      <h4 className="text-center">Google</h4>
 
-            {/* {checkboxes < 3 &&
-            <div><img alt="uncheckmark" src={unCheckMark} /></div>
-}
-            {checkboxes == 3 &&
-            <div><img alt="checkmark" src={CheckMark} /></div>
-} */}
             {boxOneIsChecked === false || boxTwoIsChecked === false || boxThreeIsChecked === false || boxFourIsChecked === false || boxFiveIsChecked === false? <div><img alt="uncheckmark" src={unCheckMark} /></div> : <div><img alt="checkmark" src={CheckMark} /></div>}
-
-            </Row>
-        </Col>
-        <h4>Google</h4>
-        <Col>
-      <p>So big it's a noun and a verb.</p></Col>
-     <Row xs="auto">
-          <Col>
 
             <Form>
               {['checkbox'].map((type) => (
@@ -73,10 +58,6 @@ function GoogleCard() {
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
-        <Row xs="auto">
-          <Col>
             <Form>
               {['checkbox'].map((type) => (
                 <div key={`default-${type}`} className="mb-3">
@@ -89,10 +70,7 @@ function GoogleCard() {
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
-        <Row xs="auto">
-          <Col>
+  
             <Form>
               {['checkbox'].map((type) => (
                 <div key={`default-${type}`} className="mb-3">
@@ -105,10 +83,7 @@ function GoogleCard() {
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
-        <Row xs="auto">
-          <Col>
+
             <Form>
               {['checkbox'].map((type) => (
                 <div key={`default-${type}`} className="mb-3">
@@ -121,10 +96,7 @@ function GoogleCard() {
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
-        <Row xs="auto">
-          <Col>
+
             <Form>
               {['checkbox'].map((type) => (
                 <div key={`default-${type}`} className="mb-3">
@@ -137,8 +109,7 @@ function GoogleCard() {
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
+
       </Card.Body>
     </Card>
   );

@@ -1,11 +1,10 @@
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+
 import CheckMark from '../task_alt_FILL0_wght400_GRAD0_opsz48.png'
 import unCheckMark from '../radio_button_unchecked_FILL0_wght400_GRAD0_opsz48.png'
 import { useState } from 'react';
+import AlertforScopus from '../Alerts/ScopusAlert';
 
 function ScopusIdCard() {
 
@@ -27,22 +26,14 @@ function ScopusIdCard() {
   };
 
 return (
-    <Card>
+    <Card className="text-start">
         <Card.Body>
-        <Col>
 
-          <Row xs="auto">
+        <h4 className="text-center">Scopus IDs</h4>
 
             {boxOneIsChecked === false || boxTwoIsChecked === false || boxThreeIsChecked === false ? <div><img alt="uncheckmark" src={unCheckMark} /></div> : <div><img alt="checkmark" src={CheckMark} /></div>}
 
-            </Row>
-        </Col><h4>Scopus IDs</h4>
-        <Col>
       <p>Scopus IDs are similar to Researcher IDs, but they are through a different company.</p>
-</Col>
-
-       <Row xs="auto">
-          <Col>
 
             <Form>
               {['checkbox'].map((type) => (
@@ -56,10 +47,6 @@ return (
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
-        <Row xs="auto">
-          <Col>
             <Form>
               {['checkbox'].map((type) => (
                 <div key={`default-${type}`} className="mb-3">
@@ -72,10 +59,7 @@ return (
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
-        <Row xs="auto">
-          <Col>
+
             <Form>
               {['checkbox'].map((type) => (
                 <div key={`default-${type}`} className="mb-3">
@@ -88,10 +72,7 @@ return (
                 </div>
               ))}
             </Form>
-          </Col>
-          <Col>
-          </Col>
-        </Row>
+            <AlertforScopus/>
       </Card.Body>
     </Card>
   );

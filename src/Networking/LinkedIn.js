@@ -11,7 +11,6 @@ function LinkedIn() {
 
   const [boxOneIsChecked, boxOneSetIsChecked] = useState(false)
   const [boxTwoIsChecked, boxTwoSetIsChecked] = useState(false)
-  const [boxThreeIsChecked, boxThreeSetIsChecked] = useState(false)
 
   const boxOneHandleOnChange = () => {
     boxOneSetIsChecked(!boxOneIsChecked);
@@ -21,25 +20,16 @@ function LinkedIn() {
     boxTwoSetIsChecked(!boxTwoIsChecked);
   };
 
-  const checkBoxTwoString = `<p>2. Update the profile</p>`
-
   return (
-    <Card>
+    <Card className="text-start">
       <Card.Body>
-        <Col>
 
-          <Row xs="auto">
+        <h4 className="text-center">LinkedIn</h4>
+
 
             {boxOneIsChecked === false || boxTwoIsChecked === false ? <div><img alt="uncheckmark" src={unCheckMark} /></div> : <div><img alt="checkmark" src={CheckMark} /></div>}
 
-            </Row>
-        </Col>
-        <h4>LinkedIn</h4>
-        <Col>
           <p>LinkedIn is a networking site used accross all professions</p>
-        </Col>
-        <Row xs="auto">
-          <Col>
 
             <Form>
               {['checkbox'].map((type) => (
@@ -53,10 +43,7 @@ function LinkedIn() {
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
-        <Row xs="auto">
-          <Col>
+
             <Form>
               {['checkbox'].map((type) => (
                 <div key={`default-${type}`} className="mb-3">
@@ -69,8 +56,7 @@ function LinkedIn() {
                 </div>
               ))}
             </Form>
-          </Col>
-        </Row>
+   
       </Card.Body>
     </Card>
   );
