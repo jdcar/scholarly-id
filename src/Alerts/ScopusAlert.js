@@ -5,9 +5,9 @@ function AlertforScopus() {
         <>
             <Col>
                 <Alert variant="success">
-                    <Alert.Heading>Tips for claiming your Scopus author profile</Alert.Heading>
+                    <Alert.Heading>Tips for editing your Scopus author profile</Alert.Heading>
                     <p>
-                        Scopus allows you claim your author profile and synch it to ORCID
+                        Scopus allows you edit your author profile and add your ORCID iD.
                     </p>
                     <hr />
                     <p>

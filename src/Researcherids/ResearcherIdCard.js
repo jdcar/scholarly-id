@@ -34,7 +34,7 @@ function ResearcherIdCard() {
 
         {boxOneIsChecked === false || boxTwoIsChecked === false || boxThreeIsChecked === false ? <div><img alt="uncheckmark" src={unCheckMark} /></div> : <div><img alt="checkmark" src={CheckMark} /></div>}
 
-        <p>Researcher IDs are a part of Web of Science. They are created through automated processes, so there may be errors in your profile. Claiming your Web of Science profile allows you to fix errors and synch works with ORCID</p>
+        <p>Researcher IDs are a part of <a href="https://libguides.northwestern.edu/webofscience" target="_blank">Web of Science</a>. They are created through automated processes, so there may be errors in your profile. Claiming your Web of Science profile allows you to fix errors and synch works with ORCID</p>
 
 
         <Form>

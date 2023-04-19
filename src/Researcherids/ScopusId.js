@@ -33,7 +33,7 @@ return (
 
             {boxOneIsChecked === false || boxTwoIsChecked === false || boxThreeIsChecked === false ? <div><img alt="uncheckmark" src={unCheckMark} /></div> : <div><img alt="checkmark" src={CheckMark} /></div>}
 
-      <p>Scopus IDs are similar to Researcher IDs, but they are through a different company.</p>
+      <p><a href="https://libguides.northwestern.edu/scopus" target="_blank">Scopus</a> IDs are similar to Researcher IDs, but they are through a different company.</p>
 
             <Form>
               {['checkbox'].map((type) => (
